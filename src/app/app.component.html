@@ -1,0 +1,54 @@
+<div class="container mt-5 shadow-lg p-4 mb-4 bg-white">
+<div class="container mt-5">
+
+  <!--heading-->
+  <h1 class="text-info bg-light text-center mb-5">App-Calculator</h1>
+
+  <div class="card-deck">
+    <div class="card bg-info border-info rounded lg ">
+     
+      <div class="card-body bg-info border-info rounded lg ">
+        <div class="form-group bg-info border-info ">
+
+          <label for="no1" style="font-weight: bold; font-style: italic; color: white; ">Enter number 1</label>
+          <input type="text" class="form-control"  [(ngModel)]="number1">
+
+          <label for="no2" style="font-weight: bold; font-style: italic; color: white;">Enter number 2</label>
+          <input type="text" class="form-control"  [(ngModel)]="number2">
+
+        </div>
+      </div>
+      
+    </div>
+    <div class="card bg-info border-info rounded lg">
+      <div class="card-body bg-info border-info rounded lg">
+
+        <button class="btn btn-warning mt-4 ml-5 text-center rounded lg" style="font-size:x-large;font-weight: bold; font-style: italic; color:white; width:100px" 
+        (click)="Add()">+</button>
+        <button class="btn btn-warning mt-4 ml-5 text-center rounded lg" style="font-size:x-large;font-weight: bold; font-style: italic; color: white; width:100px" 
+        (click)="Subtract()">-</button>
+        <button class="btn btn-warning mt-4 ml-5 text-center rounded lg" style="font-size:x-large;font-weight: bold; font-style: italic; color: white; width:100px" 
+        (click)="Multiply()">*</button>
+        <button class="btn btn-warning mt-4 ml-5 text-center rounded lg" style="font-size:x-large;font-weight: bold; font-style: italic; color: white; width:100px" 
+        (click)="Divide()">/</button>
+        <button class="btn btn-warning mt-4  ml-5 text-center rounded lg" style="font-size:x-large;font-weight: bold; font-style: italic; color: white; width:100px"
+         (click)="Modular()">%</button>
+        <button class="btn btn-danger mt-4  ml-5 text-center rounded lg" style="font-size:x-large;font-weight: bold; font-style: italic; color: white; width:100px" 
+        (click)="Clear()">Clear</button>
+
+      </div>
+    </div>
+    
+  </div>
+  <div class="card mt-5 bg-info border-info rounded lg">
+    <div class="card-body ">
+      
+        <span class="badge bg-light text-center d-block mx-auto"style="font-size:x-large;font-weight: bold; font-style: italic; color: black; width:100px">
+          {{add}} {{subtract}} {{multiply}} {{divide}} {{modular}} </span>
+  
+    </div>
+
+  </div>
+  
+</div>
+</div>
